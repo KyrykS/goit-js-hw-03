@@ -1,8 +1,14 @@
 function filterArray(numbers, value) {
-const X = [];
-for (let i = 0, i > value, i++) {
-// if (i > value) {
-// return X.push(i); 
-// }
+let X = [];
+for (let i = 0; i < numbers.length ; i++) {
+if (numbers[i] > value) {
+X.push(numbers[i]); 
 }
 }
+return X;
+}
+console.log(filterArray([1, 2, 3, 4, 5], 3)); 
+console.log(filterArray([1, 2, 3, 4, 5], 4)); 
+console.log(filterArray([1, 2, 3, 4, 5], 5)); 
+console.log(filterArray([12, 24, 8, 41, 76], 38)); 
+console.log(filterArray([12, 24, 8, 41, 76], 20)); 
